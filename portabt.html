@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <style>
+        *{
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box;
+       }
+       body{
+           background: linear-gradient(rgba(15, 3, 96, 0.952),rgba(18, 18, 133, 0.585),rgba(15, 3, 96, 0.952));
+           height: 700px;
+           width: 100%;
+       }
+       .nav{
+          position: sticky;
+          text-align: center;
+          background-color: rgb(8, 8, 69);
+          top: 0;
+           width: 100%;
+           height: 10%;
+           display: flex;
+           /* justify-content: center; */
+           justify-content: space-between;
+           /* justify-content: space-around; */
+           z-index: 1000;
+       }
+       .brand{
+           
+          color: white;
+           padding: 40px;
+          
+       }
+       Ul{
+           font-size: 15px;
+           display: flex;
+           list-style: none;
+           column-gap: 35px;
+           /* padding: 40px; */
+           padding-top: 50px;
+           margin-right: 70px;
+       }
+      
+       ul li a{
+           text-decoration: none;
+          color: white;
+          font-weight: 600;
+
+       
+       }
+       .bar{
+           
+           display: none;
+           }
+           .container{
+            display: flex;
+            justify-content: center;
+            height: 800px;
+        }
+        .content1{
+            margin-top: 80px;
+            height: 500px;
+            width: 50%;
+            box-shadow: 0px 0px 20px 20px rgb(74, 74, 134);
+        }
+        .content1 h2{
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(249, 249, 251);
+        }
+        .content1 p{
+            text-indent: 80px;
+            text-align: start;
+            padding: 30px;
+            line-height: 25px;
+            word-spacing: 7px;
+            color:white;
+            font-weight:500;
+            font-size: 18px;
+        }
+        .content1 h4{
+            margin-left:30px;
+            word-spacing:8px;
+            
+        }
+
+
+           @media screen and (max-width:400px){
+            .nav{
+                flex-direction: column;
+               
+            }
+            .nav ul{
+                display: block;
+               /* overflow: hidden; */
+              align-items: center;
+
+            }
+            ul{
+              
+                
+              padding: 0;
+              margin: 0px;
+              text-align: center;
+              line-height: 25px;
+             
+              /* visibility: hidden; */
+          }
+          .bar{
+            color: white;
+            font-size: 25px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+
+        }
+        .brand{
+            padding: 20px 0px 0 0;
+        }
+        .barlist{
+            background-color:rgb(8, 8, 69) ;
+
+        }
+    
+.hide{
+    visibility: hidden;
+}
+.container{
+    display: inline;
+}
+.content1{
+    margin-left: 17px;
+    
+    width:90%;
+    height: 900px;
+    padding: 0;
+}
+.content1 h2{
+    margin-top: 20px;
+}
+    
+}
+       </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <ul class="barlist hide">
+            <li><a href="http://127.0.0.1:5500/port1.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="http://127.0.0.1:5500/portskill.html">Skils</a></li>
+            <li><a href="http://127.0.0.1:5500/portexp.html">Experience</a></li>
+            <li><a class="mrg" href="http://127.0.0.1:5500/portcontact.html">Contact</a></li>
+    
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars" ></i>
+           
+        </div>
+    </header>
+    <div class="container">
+        <div class="content1">
+            <h2>ABOUT ME....!</h2><br>
+            <p>I’m a dedicated web developer with a passion for creating dynamic and user-friendly websites. 
+                Proficient in HTML, CSS, JavaScript ,react and java, I excel in both front-end and back-end development.
+                 My focus is on delivering innovative solutions and staying updated with the latest trends to provide exceptional 
+                user experiences.
+            </p><br>
+            <h4><i class="fa-solid fa-user-graduate"></i>  Degree:BE(EIE)</h4><br>
+            <h4><i class="fa-solid fa-envelope"></i>  Email:rr6234263@gmail.com</h4><br>
+            <h4><i class="fa-solid fa-phone"></i></i>  Phone:8825445817</h4><br>
+            <h4><i class="fa-solid fa-location-dot"></i>  location:Villupuram(dis),Marakkanam</h4>
+
+
+        </div>
+    </div>
+
+    
+</body>
+<script>
+document.querySelector(".bar").onclick=function(){
+    document.querySelector(".barlist").classList.toggle("hide");
+}
+</script>
+</html>

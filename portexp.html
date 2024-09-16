@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <style>
+        *{
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box;
+       }
+       body{
+           background: linear-gradient(rgba(15, 3, 96, 0.952),rgba(18, 18, 133, 0.585),rgba(15, 3, 96, 0.952));
+           height: 700px;
+           width: 100%;
+       }
+       .nav{
+          position: sticky;
+          text-align: center;
+          background-color: rgb(8, 8, 69);
+          top: 0;
+           width: 100%;
+           height: 10%;
+           display: flex;
+           /* justify-content: center; */
+           justify-content: space-between;
+           /* justify-content: space-around; */
+           z-index: 1000;
+       }
+       .brand{
+           
+          color: white;
+           padding: 40px;
+          
+       }
+       Ul{
+           font-size: 15px;
+           display: flex;
+           list-style: none;
+           column-gap: 35px;
+           /* padding: 40px; */
+           padding-top: 50px;
+           margin-right: 70px;
+       }
+      
+       ul li a{
+           text-decoration: none;
+          color: white;
+          font-weight: 600;
+
+       
+       }
+       .bar{
+           
+           display: none;
+           }
+           .container{
+            display: flex;
+            justify-content: center;
+           }
+           .timeline_area{
+            margin: 90px auto;
+            width: 550px;
+            
+            border-left: 2px solid #ccc;
+            padding: 0 20px 0 30px;
+           }
+           .msg_box{
+            background-color: #fff;
+            padding: 10px ;
+            
+            border: 1px solid #ccc;
+           
+            position: relative;
+            height: 250px;
+            
+            margin-bottom: 20px;
+           }.msg_box p{
+            text-indent: 20px;
+
+           }
+           .msg_box h1{
+            color: rgb(5, 5, 144);
+
+           }
+           .msg_box:before{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background-color: #000;
+            border: 3px solid #ddd;
+            position: absolute;
+            top: 10px;
+            left: -40px;
+
+           }.msg_box:after{
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent #ddd transparent transparent;
+            border-width: 8px;
+            position: absolute;
+            left: -17px;
+            top:10px;
+           }
+           @media screen and (max-width:400px){
+            .nav{
+                flex-direction: column;
+               
+            }
+            .nav ul{
+                display: block;
+               /* overflow: hidden; */
+              align-items: center;
+
+            }
+            ul{
+              
+                
+              padding: 0;
+              margin: 0px;
+              text-align: center;
+              line-height: 25px;
+             
+              /* visibility: hidden; */
+          }
+          .bar{
+            
+            color: white;
+            font-size: 25px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+
+        }
+        .brand{
+            padding: 20px 0px 0 0;
+        }
+        .barlist{
+            background-color:rgb(8, 8, 69) ;
+
+        }
+        
+    
+.hide{
+    visibility: hidden;
+}
+.container{
+    display: inline;
+}
+.timeline_area{
+            
+        width: 300px;
+}
+.msg_box{
+            
+            height: 400px;
+            
+            
+           }
+
+
+
+
+}
+       </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <ul class="barlist hide">
+            <li><a href="http://127.0.0.1:5500/port1.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/portabt.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/portskill.html">Skils</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a class="mrg" href="http://127.0.0.1:5500/portcontact.html">Contact</a></li>
+    
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars" ></i>
+           
+        </div>
+    </header>
+    <div class="container">
+   <section class="timeline_area">
+    <div class="msg_box">
+        <h1>Experience...!</h1><br>
+        <h2>BI Technical Consultant - 17Oct2022 to 7March2024</h2><br>
+        <h3>WisValour Technology Solutions Private Limited -Chennai</h3><br>
+        <p>Responsible for gathering business requirements and technical specifications from the users.
+            Involved in designing, developing , testing , publishing , maintaining, and supporting 
+            qliksense application.
+        </p>
+    </div>
+    <div class="msg_box">
+        <h1>Education...!</h1><br>
+        <h2>Degree:BE-Electronic Instrumentation Engineering</h2><br>
+        <h3>Thiruvalluvar Collage of Engineering and Technology</h3><br>
+        <h4>PassedOut-2022(CGPA-8.4)</h4>
+    </div>
+   </section>
+</div>
+    
+</body>
+<script>
+document.querySelector(".bar").onclick=function(){
+    document.querySelector(".barlist").classList.toggle("hide");
+}
+</script>
+</html>

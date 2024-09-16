@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(rgba(15, 3, 96, 0.952),rgba(18, 18, 133, 0.585),rgba(15, 3, 96, 0.952));
+            height: 700px;
+            width: 100%;
+        }
+        .nav{
+           position: sticky;
+           text-align: center;
+           background-color: rgb(8, 8, 69);
+           top: 0;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            z-index: 1000;
+        }
+        .brand{
+            
+           color: white;
+            padding: 40px;
+           
+        }
+        Ul{
+            font-size: 15px;
+            display: flex;
+            list-style: none;
+            column-gap: 35px;
+            /* padding: 40px; */
+            padding-top: 50px;
+            margin-right: 70px;
+        }
+       
+        ul li a{
+            text-decoration: none;
+           color: white;
+           font-weight: 600;
+
+        
+        }
+        .bar{
+            
+            display: none;
+            }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .content1{
+            margin-top: 80px;
+            width: 50%;
+            height: 500px;
+            list-style: none;
+        }
+        .content1 li{
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .content1 h1{
+            text-align: center;
+        }
+        .content1 h3{
+            margin: 5px;
+        }
+        .bar_line{
+            
+            display: block;
+            height: 20px;
+            border: 1px solid rgba(0,0,0,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0, 0.12) ,0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            }
+            .bar_line:hover{
+                box-shadow: 0 14px 28px rgba(0,0,0, 0.25) ,0 10px 10px rgba(0,0,0,0.22);
+            }
+            .bar_line span{
+                height: 20px;
+                float: left;
+                background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+
+            }
+            .html{
+                width: 90%;
+                animation: html 3s;
+            }
+            .css{
+                width: 80%;
+                animation: css 3s;
+            }
+            .javascript{
+                width: 50%;
+                animation: javascript 3s;
+            }
+            .java{
+                width: 70%;
+                animation: html 3s;
+            }
+            @keyframes html {
+                0%{
+                    width: 0%;
+                    
+                }
+                100%{
+                    width:90%;
+                }
+            }
+            @keyframes css {
+                0%{
+                    width: 0%;
+                    
+                }
+                100%{
+                    width:80%;
+                }
+            }
+            @keyframes javascript {
+                0%{
+                    width: 0%;
+                    
+                }
+                100%{
+                    width:50%;
+                }
+            }
+            @keyframes java {
+                0%{
+                    width: 0%;
+                    
+                }
+                100%{
+                    width:70%;
+                }
+            }
+       
+       
+        
+        @media screen and (max-width:400px){
+            .nav{
+                flex-direction: column;
+               
+            }
+            .nav ul{
+                display: block;
+               /* overflow: hidden; */
+              /* align-items: center; */
+
+            }
+            ul{
+              
+                
+              padding: 0;
+              margin: 0px;
+              /* text-align: center; */
+              line-height: 25px;
+             
+              /* visibility: hidden; */
+          }
+          .brand{
+            padding: 20px 0px 0 0;
+        }
+    
+          .bar{
+            color: white;
+            
+            font-size: 25px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+
+        }
+        .hide{
+visibility: hidden;
+        }
+        .barlist{
+            background-color:rgb(8, 8, 69) ;
+
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <ul class="barlist hide">
+            <li><a href="http://127.0.0.1:5500/port1.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/portabt.html">About</a></li>
+            <li><a href="">Skils</a></li>
+            <li><a href="http://127.0.0.1:5500/portexp.html">Experience</a></li>
+            <li><a class="mrg" href="http://127.0.0.1:5500/portcontact.html">Contact</a></li>
+    
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars" ></i>
+           
+        </div>
+    </header>
+    <div class="container">
+        <div class="content1">
+            <h1> SKLLS</h1>
+            <li><h3>HTML</h3>
+                <SPan class="bar_line"><SPan class="html"></SPan></SPan>
+            </li>
+            <li><h3>CSS</h3>
+                <SPan class="bar_line"><SPan class="css"></SPan></SPan>
+            </li>
+            <li><h3>JAVASCRIPT</h3>
+                <SPan class="bar_line"><SPan class="javascript"></SPan></SPan>
+            </li>
+            <li><h3>JAVA</h3>
+                <SPan class="bar_line"><SPan class="java"></SPan></SPan>
+            </li>
+
+
+        </div>
+</body>
+<script>
+
+    document.querySelector(".bar").onclick=function(){
+        document.querySelector(".barlist").classList.toggle("hide");
+    }
+    // let barlist =document.getElementById("barlist")
+    // barlist.style.maxHeight="0px";
+
+    // function toggleMenu(){
+    //     if(barlist.style.maxHeight =="0px"){
+    //         barlist.style.maxHeight="300px";
+    //     }
+    //     else{
+    //         barlist.style.maxHeight="0px";
+    //     }
+    // }
+    // </script>
+
+</html>

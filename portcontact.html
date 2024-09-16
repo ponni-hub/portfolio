@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(rgba(15, 3, 96, 0.952),rgba(18, 18, 133, 0.585),rgba(15, 3, 96, 0.952));
+            height: 700px;
+            width: 100%;
+        }
+        .nav{
+           position: sticky;
+           text-align: center;
+           background-color: rgb(8, 8, 69);
+           top: 0;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            z-index: 1000;
+        }
+        .brand{
+           color: white;
+           padding: 40px;
+           
+        }
+        Ul{
+            font-size: 15px;
+            display: flex;
+            list-style: none;
+            column-gap: 35px;
+            /* padding: 40px; */
+            padding-top: 50px;
+            margin-right: 70px;
+        }
+       
+        ul li a{
+            text-decoration: none;
+           color: white;
+           font-weight: 600;
+
+        
+        }
+        .bar{
+            
+            display: none;
+            }.label{
+    line-gap-override: 20px;
+    margin-left: 20px;
+   margin-top: 10px;
+   line-height: 40px;
+   font-weight: 600;
+}
+.container{
+    width: 100%;
+    display: flex;
+     justify-content: center;
+    padding: 80px;
+    justify-content: space-evenly;
+    }
+     
+.content{
+    background-color: transparent;
+    box-shadow: 0px 0px 20px 20px rgb(74, 74, 134);
+    border-radius: 20px;
+    color: white;
+    margin-top: 80px;
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    
+}
+.content:hover{
+        background-color: white;
+        color: black;
+    }
+.title{
+text-align: center;
+}
+.sub_cont{
+text-align: center;
+}
+.form{
+    margin-top: 80px;
+    width: 40%;
+    height: 300px;
+}
+        
+.type{
+    margin-left: 20px;
+    width: 500px;
+    height: 5px;
+    padding: 10px;
+    border: none;
+    line-height: 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgb(74, 74, 134);
+
+    
+}
+
+#text{
+    margin-top: 10px;
+    margin-left:18px;
+    height:100px;
+    width: 500px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgb(74, 74, 134);
+}button{
+    margin-top: 30px;
+    border-radius: 40px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 100px;
+   border: none;
+    background-color:transparent;
+    box-shadow: 0px 0px 10px 10px rgb(74, 74, 134);
+    color: rgb(14, 14, 14);
+    word-spacing: 2px;
+}
+ 
+       
+
+         @media screen and (max-width:400px){
+            .nav{
+                flex-direction: column;
+               
+            }
+            .nav ul{
+                display: block;
+               /* overflow: hidden; */
+              align-items: center;
+
+            }
+            ul{
+              
+                
+              padding: 0;
+              margin: 0px;
+              text-align: center;
+              line-height: 25px;
+             
+              /* visibility: hidden; */
+          }
+          .bar{
+            color: white;
+            font-size: 25px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+
+        }
+        .brand{
+            padding: 20px 0px 0 0;
+        }
+        .barlist{
+            background-color:rgb(8, 8, 69) ;
+
+        }
+        
+    
+.hide{
+    visibility: hidden;
+}
+
+.form{
+    margin-left: 35px;
+    width: 40%;
+    height: 500px;
+}
+.type{
+    margin-left: 20px;
+    width: 250px;
+    height: 5px;
+    padding: 10px;
+    line-height: 50px;
+    
+}
+#text{
+    margin-top: 10px;
+    margin-left:18px;
+    height:100px;
+    width: 250px;}
+    .container{
+        display: inline;
+      
+    }
+   .content{
+    width: 80%;
+    margin-left: 35px;
+    }
+    
+    }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <ul class="barlist hide">
+            <li><a href="http://127.0.0.1:5500/port1.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/portabt.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/portskill.html">Skils</a></li>
+            <li><a href="http://127.0.0.1:5500/portexp.html">Experience</a></li>
+            <li><a class="mrg" href="">Contact</a></li>
+    
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars" ></i>
+           
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="content">
+            <h3 class="title">Get in touch</h3><br>
+        <p class="sub_cont">Do you have project in your mind,contact me here</p><br>
+            <h3>FInd me</h3><br>
+            <h4><i class="fa-solid fa-envelope"></i>  Email:rr6234263@gmail.com</h4><br>
+            <h4><i class="fa-solid fa-phone"></i></i>  Phone:8825445817</h4><br>
+
+        </div>
+
+        
+        <form class="form" action="Userlogin">
+            <label class="label"  for="">Full Name</label><br>
+            <input  class="type" placeholder="Full Name" type="text"><br>
+            <label class="label" for="">Your Email</label><br>
+            <input  class="type"placeholder="Your Email"   type="email"><br>
+            <label class="label"  for="">Address</label><br>
+            <textarea name="Address" id="text"></textarea><br>
+            <div><button>Send <i class="fa-brands fa-telegram"></i></button></div>
+            
+         </form>
+    </div>
+</body>
+<script>
+     document.querySelector(".bar").onclick=function(){
+        document.querySelector(".barlist").classList.toggle("hide");
+    }
+</script>
+</html>

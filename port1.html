@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(rgba(15, 3, 96, 0.952),rgba(18, 18, 133, 0.585),rgba(15, 3, 96, 0.952));
+            height: 700px;
+            width: 100%;
+        }
+        .nav{
+           position: sticky;
+           text-align: center;
+           background-color: rgb(8, 8, 69);
+           top: 0;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            z-index: 1000;
+        }
+        .brand{
+           color: white;
+           padding: 40px;
+           
+        }
+        Ul{
+            font-size: 15px;
+            display: flex;
+            list-style: none;
+            column-gap: 35px;
+            /* padding: 40px; */
+            padding-top: 50px;
+            margin-right: 70px;
+        }
+       
+        ul li a{
+            text-decoration: none;
+           color: white;
+           font-weight: 600;
+
+        
+        }
+        .bar{
+            
+            display: none;
+            }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .content1{
+            margin-top: 80px;
+            width: 50%;
+            height: 500px;
+            /* background-color: aqua; */
+            text-align: center;
+            line-height: 25px;
+            /* text-indent: 10px; */
+            color: white;
+            
+        }
+        .content1 p{
+            text-indent: 80px;
+            text-align: start;
+            word-spacing: 7px;
+            font-size: 18px;
+        }
+        .content2{
+            margin-top: 80px;
+            width: 50%;
+            height: 500px;
+            /* background-color: beige; */
+            text-align: center;
+           
+        }   
+        .word1{
+            color:#1B1068;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        .icons{
+           margin-top: 50px;
+           color:white ;
+           letter-spacing: 10px;
+           font-size: larger;
+        }
+        
+        .content1 a{
+            width: 50px;
+            height: 50px;
+          margin-top: 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            padding: 10px;
+            background-color:rgb(6, 6, 88);
+            border: 1px solid  rgb(6, 6, 88);
+            color: white;
+        }
+        .content1 a:hover{
+            color:rgb(6, 6, 88) ;
+            background-color: white;
+        }
+        
+        
+        @media screen and (max-width:400px){
+            .nav{
+                flex-direction: column;
+               
+            }
+            .nav ul{
+                display: block;
+               /* overflow: hidden; */
+              align-items: center;
+
+            }
+            ul{
+              
+                
+              padding: 0;
+              margin: 0px;
+              text-align: center;
+              line-height: 25px;
+             
+              /* visibility: hidden; */
+          }
+          .bar{
+            color: white;
+            font-size: 25px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+
+        }
+        .brand{
+            padding: 20px 0px 0 0;
+        }
+    
+.hide{
+    visibility: hidden;
+}
+    
+  
+    .container{
+            display: inline;
+           
+           
+           
+        }
+        .content1{
+            width: 100%;
+            
+           margin-top: 20px;
+        }
+        .content2{
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            color: white;
+        }
+        .barlist{
+            background-color:rgb(8, 8, 69) ;
+
+        } 
+    
+    
+}
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <ul class="barlist hide ">
+            <li><a href="">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/portabt.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/portskill.html">Skils</a></li>
+            <li><a href="http://127.0.0.1:5500/portexp.html">Experience</a></li>
+            <li><a class="mrg" href="http://127.0.0.1:5500/portcontact.html">Contact</a></li>
+    
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+           
+        </div>
+    </header>
+    <div class="container">
+        <div class="content2">
+            <img src="user.png" alt="">
+                </div>
+    <div class="content1">
+        <h1> Hi My self</h1><br>
+        <h2>Ponniyammal....!</h2><br>
+        <h3>And i am <span class="word1">FullStack Developer</span></h3><br>
+        <p>I am well-versedin HTML,CSS, javascript,react and java and other cutting edge frame worksand libraries,which allows me to implement
+            interactive features. 
+        </p><br>
+        
+         <!-- <button class="btn">Download CV</button> -->
+         <a class="btn org" href="Resume.pdf" download="Resume">Download CV</a>
+         
+         <div class="icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-envelope"></i>
+         <i class="fa-brands fa-square-twitter"></i>
+        </div>
+       
+    </div>
+   
+</div>
+</body>
+<script>
+     document.querySelector(".bar").onclick=function(){
+        document.querySelector(".barlist").classList.toggle("hide");
+    }
+
+ 
+
+
+   
+</script>
+</html>

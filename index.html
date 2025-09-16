@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Lee | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="logo">Jane Lee</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#what-i-do">What I Do</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="intro-text">
+            <h1>Hi, I’m <span>Jane Lee</span></h1>
+            <p>a Developer creating innovative web experiences.</p>
+            <div class="social-icons">
+                <a href="#"><img src="icons/github.svg" alt="GitHub"></a>
+                <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="images/developer-photo.jpg" alt="Developer Photo">
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <section id="what-i-do" class="services">
+        <h2>What I Do</h2>
+        <div class="service-cards">
+            <div class="card">Business Strategy</div>
+            <div class="card">App Development</div>
+            <div class="card">CEO Marketing</div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="resume">
+        <h2>My Resume</h2>
+        <div class="timeline">
+            <div class="timeline-item">Diploma in Web Development</div>
+            <div class="timeline-item">Worked at XYZ Company</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Jane Lee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
